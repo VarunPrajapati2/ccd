@@ -1,0 +1,115 @@
+<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section" style="margin-top:120px;">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 col-lg-5 d-flex">
+                    <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(assets/images/15.jpg);">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
+                    <div class="py-md-5">
+                        <div class="row justify-content-start pb-3">
+                          <div class="col-md-12 heading-section  p-2">
+                            <h2 class="mb-4">We Are <span>Caring </span>Crowns Dental</h2>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            <p class="mt-4"><button type="button" class="home-button" (click)="openModalAppointment(template)">Make an Appointment</button></p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-5 service-14 mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mt-5 pt-5">
+                    <span class="badge badge-info rounded-pill px-3 py-1 font-weight-light" style=" background-image: linear-gradient(180deg, #F44336 5%, #FF9800 95% );">About</span>
+                    <div class="col-md-12 heading-section  p-2">
+                        <h2 class="mb-4">We Are <span>Dentist</span></h2>
+                    </div>
+                    <p>You can relay on our amazing features list and also our customer services will be great experience for our users</p>
+                    <p>You will surely fall in love with ready touse bootstrap ui kit framework.</p>
+                    <p class="mt-5"><a routerLink='/contact'  class="header-button text-white  my-3 mt-5">View Details</a></p> 
+                </div>
+                <div class="col-lg-4">
+                    <div class="mb-4 mb-sm-0 about">
+                        <img class="rounded img-fluid" src="assets/images/11.png" alt="wrappixel kit" />
+                        <div class="mt-3 p-3">
+                            <h6 class="font-weight-medium">Retargeting Market</h6>
+                            <p class="mt-3">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                            <a href="javascript:void(0)" class="linking">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column -->
+                <div class="col-lg-4">
+                    <div class="mb-4 mb-sm-0 about">
+                        <img class="rounded img-fluid" src="assets/images/9.png" alt="wrappixel kit" />
+                        <div class="mt-3 p-3">
+                            <h6 class="font-weight-medium">Fruitful Results</h6>
+                            <p class="mt-3">You can relay on our amazing features list and also our customer services will be great experience.</p>
+                            <a href="javascript:void(0)" class="linking">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column -->
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- modal -->
+    <ng-template #template>
+		<div class="modal-header">
+		  <h4 class="modal-title pull-left">Book an Appointment </h4>
+		  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="banner6 image py-5" style="background-image: url(../../../assets/images/bg1.jpg);">
+			  <!-- Row  -->
+			  <div class="row mb-5 ml-5 align-items-center">
+				<div class="container">
+				  <div class="col-md-6 contact-form" style="margin-left:100px;">
+					  <h3 class="pl-4 ">Appointment Form<hr class="mb-4"> </h3> 
+					  <h6 class="subtitle font-weight-normal"></h6>
+					  <form class="mt-3">
+						<div class="row">
+						  <div class="col-lg-12 pl-4">
+							<div class="form-group">
+							  <input class="form-control text" type="text" placeholder="Full Name">
+							</div>
+						  </div>
+						  <div class="col-lg-12 pl-4">
+							<div class="form-group">
+							  <input class="form-control text" type="number" placeholder="Mobile No">
+							</div>
+						  </div>
+						  <div class="col-lg-12 pl-4">
+							<div class="form-group">
+								<input type="date"
+								placeholder="Appointment Date"
+								class="form-control text">
+								
+							</div>
+						  </div>
+						  <div class="col-lg-12 pl-4">
+							<div class="form-group">
+							  <textarea class="form-control text" type="text"  row="3" placeholder="Write Your Message"></textarea>
+							</div>
+						  </div>
+						  <div class="col-lg-10 mt-3 pl-4 px-4 py-2">
+							<button type="submit" class="btn btn-md btn-danger-gradiant"><span> Make an Appointment</span></button>
+						  </div>
+						</div>
+					  </form>
+					  
+					</div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+</ng-template>

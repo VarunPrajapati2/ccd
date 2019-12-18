@@ -1,0 +1,110 @@
+<div class="py-1 top" style=" background-image: linear-gradient(45deg, rgb(253, 77, 65) 0%, rgb(255, 164, 27) 115% );">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+	    		<div class="col-lg-12 d-block">
+		    		<div class="row d-flex">
+		    			<div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">+91 9582554359 &nbsp;+91 9911424359</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">dikshamehra0725@gmail.com</span>
+					    </div>
+					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
+						    <!-- <p class="mb-0 register-link"><a href="#" class="mr-3">Sign Up</a><a href="#">Sign In</a></p> -->
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	     <a routerLink='/'> <img src="../../../assets/images/Logo_dentist1.png" alt="Caring Crowns Dental" width="80px" class="mt-1"></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a routerLink="/" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a routerLink="/about" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a routerLink="/" class="nav-link"><span>Doctors</span></a></li>
+	          <li class="nav-item"><a routerLink="/service" class="nav-link"><span>services</span></a></li>
+	          <li class="nav-item"><a routerLink="/contact" class="nav-link"><span>Contact</span></a></li>
+			  <button type="button" class="header-button" (click)="openModalAppointment(template)">Appointment</button>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+
+
+	  
+<br>
+ 
+<!-- <ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Just a modal with a bunch of words inside, nothing serious.
+  </div>
+</ng-template> -->
+
+<ng-template #template>
+		<div class="modal-header">
+		  <h4 class="modal-title pull-left">Book an Appointment </h4>
+		  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="banner6 image py-5" style="background-image: url(../../../assets/images/bg1.jpg);">
+			  <!-- Row  -->
+			  <div class="row mb-5 ml-5 align-items-center">
+				<div class="container">
+				  <div class="col-md-6 contact-form" style="margin-left:100px;">
+					  <h3 class="pl-4 ">Appointment Form<hr class="mb-4"> </h3> 
+					  <h6 class="subtitle font-weight-normal"></h6>
+					  <form class="mt-3">
+						<div class="row">
+						  <div class="col-lg-12 pl-4">
+							<div class="form-group">
+							  <input class="form-control text" type="text" placeholder="Full Name">
+							</div>
+						  </div>
+						  <div class="col-lg-12 pl-4">
+							<div class="form-group">
+							  <input class="form-control text" type="number" placeholder="Mobile No">
+							</div>
+						  </div>
+						  <div class="col-lg-12 pl-4">
+							<div class="form-group">
+								<input type="date"
+								placeholder="Appointment Date"
+								class="form-control text">
+								
+							</div>
+						  </div>
+						  <div class="col-lg-12 pl-4">
+							<div class="form-group">
+							  <textarea class="form-control text" type="text"  row="3" placeholder="Write Your Message"></textarea>
+							</div>
+						  </div>
+						  <div class="col-lg-10 mt-3 pl-4 px-4 py-2">
+							<button type="submit" class="btn btn-md btn-danger-gradiant text-white"><span> Make an Appointment</span></button>
+						  </div>
+						</div>
+					  </form>
+					  
+					</div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+</ng-template>
