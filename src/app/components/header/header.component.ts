@@ -1,5 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import * as $ from 'jquery'; 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -17,6 +18,10 @@ export class HeaderComponent implements OnInit {
     );
   }
   ngOnInit() {
+    // $('.navbar-nav>li>a').on('click', function(){
+    //   $('#ftco-nav').collapse('hide');
+    // });
   }
+  
   
 }

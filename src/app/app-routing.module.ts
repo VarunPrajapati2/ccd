@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:'service',component:AppointmentComponent},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
-  {path:'appointment',component:Appointment2Component},
+  {path:'treatments',component:Appointment2Component},
   {path:'**',component:HomeComponent},
   
 ];

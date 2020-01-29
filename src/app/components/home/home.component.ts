@@ -7,7 +7,6 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
   
   modalRef: BsModalRef;
   constructor(private modalService: BsModalService) {}
@@ -18,7 +17,9 @@ export class HomeComponent implements OnInit {
       Object.assign({}, { class: 'gray modal-lg' })
     );
   }
+
   ngOnInit() {
+   
   }
 
 }

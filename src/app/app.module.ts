@@ -12,10 +12,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { Appointment2Component } from './components/appointment2/appointment2.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 import { ModalModule } from 'ngx-bootstrap/modal';
-
-
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
@@ -35,11 +34,10 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     BsDatepickerModule.forRoot(),
     BrowserAnimationsModule,
     ModalModule.forRoot(),
+    CarouselModule.forRoot(),
    
-   
-    
   ],
-  providers: [],
+  providers: [{provide : LocationStrategy , useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

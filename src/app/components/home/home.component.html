@@ -1,56 +1,57 @@
 <!-- Appointment modal -->
 <ng-template #template>
 		<div class="modal-header">
-		  <h4 class="modal-title pull-left">Make an Appointment </h4>
+		  <!-- <h4 class="modal-title pull-left">Make an Appointment </h4> -->
 		  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
 			<span aria-hidden="true">&times;</span>
 		  </button>
 		</div>
 		<div class="modal-body">
-      <div class="card" style="background-image: url(assets/images/crown_bg1.png);">
-        <article class="card-body mx-auto" style="max-width: 400px;">
+      <div class="card" style="background-image: url(assets/images/surgery.jpg);">
+        <div class="overlay"></div>
+        <article class="card-body mx-auto" style="max-width: 500px;">
           
-          <p class="text-center">You can also Follow us on Facebook</p>
+          <h4 class="text-center mb-4">Make an Appointment</h4>
           <p>
             <a href="" class="btn btn-block btn-facebook"><img src="https://img.icons8.com/ios/50/000000/facebook-like.png" width="25">  Follow us on facebook</a>
           </p>
-          <p class="divider-text">
+          <p class="divider-text mt-4">
                 <span class="bg-light">OR</span>
             </p>
           <form>
-          <div class="form-group input-group">
+          <div class="form-group input-group mt-4">
             <div class="input-group-prepend">
-                <span class="input-group-text"> <i class="fa fa-user-circle" aria-hidden="true"></i> </span>
+                <span class="input-group-text"> <img src="https://img.icons8.com/android/24/000000/user.png" width="20"> </span>
              </div>
-                <input name="" class="form-control" placeholder="Full name" type="text">
+                <input name="" class="form-control box" placeholder="Full name" type="text" required>
             </div> <!-- form-group// -->
             <div class="form-group input-group">
               <div class="input-group-prepend">
-                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                <span class="input-group-text"> <img src="https://img.icons8.com/material-sharp/64/000000/mobile-email.png" width="20"> </span>
+            </div>
+              <input name="" class="form-control" placeholder="Phone number" type="text" required>
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> <img src="https://img.icons8.com/metro/26/000000/date-to.png" width="20"> </span>
+            </div>
+              <input name="" class="form-control" placeholder="Appointment Date" type="date" required>
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> <img src="https://img.icons8.com/metro/26/000000/open-envelope.png" width="20"> </span>
              </div>
-                <input name="" class="form-control" placeholder="Email address" type="email">
+                <input name="" class="form-control box" placeholder="Email address" type="email">
             </div> <!-- form-group// -->
             <div class="form-group input-group">
               <div class="input-group-prepend">
-                <span class="input-group-text"> <img src="https://img.icons8.com/material-sharp/64/000000/mobile-email.png" width="17"> </span>
+                <span class="input-group-text"> <img src="https://img.icons8.com/metro/26/000000/pencil.png" width="20"> </span>
             </div>
-              <input name="" class="form-control" placeholder="Phone number" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"> <i class="fa fa-calendar" aria-hidden="true"></i> </span>
-            </div>
-              <input name="" class="form-control" placeholder="Appointment Date " type="date">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"> <img src="https://img.icons8.com/pastel-glyph/48/000000/tooth.png" width="20"> </span>
-            </div>
-            <textarea name="" id="" rows="2" cols="30" placeholder="Write Your Message"></textarea>
+            <textarea name="" class="form-control" rows="2" cols="30" placeholder="Write Your Message"></textarea>
           </div> <!-- form-group end.// -->                                      
             <div class="form-group">
-                <button type="submit" class="header-button pl-3 pr-3"> Make an Appointment </button>
-                <button type="submit" class="home-button ml-4 pl-3 pr-3"> Cancel  </button>
+                <button type="submit" class="home-button pl-3 pr-3 mt-3"> Submit </button>
+                <button type="submit" class="header-button ml-4 pl-3 pr-3 mt-3" (click)="modalRef.hide()"> Cancel  </button>
             </div> <!-- form-group// -->                                                                   
         </form>
         </article>
@@ -59,17 +60,15 @@
 </ng-template>
 <!-- Appointment modal -->
 
-
-
 <section class="hero-wrap js-fullheight"  data-section="home" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start d-flex  pt-5 " data-scrollax-parent="true">
         <div class="col-md-5   pr-4 banner-text">
             <div class="mt-5 pt-5 pl-4 " style="position: absolute;">
                 <span class="badge badge-info rounded-pill px-3 py-1 font-weight-light" style=" background-image: linear-gradient(180deg, #F44336 5%, #FF9800 95% );">We Are,</span>
-              <h1 class="mb-4"><span style="color:rgb(0, 0, 75)">Caring  <img src="../../../assets/images/crown.png" alt="" width="50"> </span> <br>&nbsp;&nbsp;&nbsp;Crowns <br><img src="../../../assets/images/logo.png" alt="" width="90">Dental</h1>
-              <p class="mb-4 pr-5">Specialized Dentistry,&nbsp;Personalized Care</p>
-              <p><button type="button" class="header-button pl-3 pr-3" (click)="openModalAppointment(template)">Make an Appointment</button>
+              <h1 ><span style="color:rgb(11, 32, 78)">Caring  <img src="../../../assets/images/png/crown.png" alt="" width="50"> </span> <br>&nbsp;&nbsp;&nbsp;Crowns <br><img src="../../../assets/images/logo.png" alt="" width="80">Dental</h1>
+              <p class="mb-4" style="margin-top: -18px;">Specialized Dentistry,&nbsp;Personalized Care</p>
+              <button type="button" class="header-button pl-3 pr-3" (click)="openModalAppointment(template)">Appointment</button>
           </div>
         </div>
         <div class="col-md-7 pt-2 banner">
@@ -79,48 +78,199 @@
     </div>
   </section>
 
-      <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+  <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
       <div class="container">
-          <div class="row d-flex  pt-5">
-              <div class="col-md-6 col-lg-5 d-flex">
-                  <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(assets/images/dental3.png); border-radius: 10px;">
-                  </div>
+          <div class="row d-flex mb-5  ">
+              <div class="col-md-6 col-lg-4 d-flex mt-2">
+                <div class="carder" style="background-image: linear-gradient(45deg, rgb(252, 65, 52) 0%, rgb(255, 156, 8) 95% );">
+                  <article class="card-body mx-auto" style="max-width: 500px;">
+                    
+                    <h4 class="text-center mb-4">Make an Appointment</h4>
+                    <p>
+                      <a href="" class="btn btn-block btn-facebook"><img src="https://img.icons8.com/ios/50/000000/facebook-like.png" width="25">  Follow us on facebook</a>
+                    </p>
+                    <p class="divider-text mt-4">
+                          <span class="bg-light">OR</span>
+                      </p>
+                    <form>
+                    <div class="form-group input-group mt-4">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text"> <img src="https://img.icons8.com/android/24/000000/user.png" width="20"> </span>
+                       </div>
+                          <input name="" class="form-control box" placeholder="Full name" type="text" required>
+                      </div> <!-- form-group// -->
+                      <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"> <img src="https://img.icons8.com/material-sharp/64/000000/mobile-email.png" width="20"> </span>
+                      </div>
+                        <input name="" class="form-control" placeholder="Phone number" type="text" required>
+                      </div> <!-- form-group// -->
+                      <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"> <img src="https://img.icons8.com/metro/26/000000/date-to.png" width="20"> </span>
+                      </div>
+                        <input name="" class="form-control" placeholder="Appointment Date" type="date" >
+                      </div> <!-- form-group// -->
+                      <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"> <img src="https://img.icons8.com/metro/26/000000/open-envelope.png" width="20"> </span>
+                       </div>
+                          <input name="" class="form-control box" placeholder="Email address" type="email">
+                      </div> <!-- form-group// -->
+                      <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"> <img src="https://img.icons8.com/metro/26/000000/pencil.png" width="20"> </span>
+                      </div>
+                      <textarea name="" class="form-control" rows="2" cols="30" placeholder="Write Your Message"></textarea>
+                    </div> <!-- form-group end.// -->                                      
+                      <div class="form-group">
+                          <button type="submit" class="home-button pl-3 pr-3 mt-3"> Submit </button>
+                          <button type="submit" class="header-button ml-4 pl-3 pr-3 mt-3"> Cancel </button>
+                      </div> <!-- form-group// -->                                                                   
+                  </form>
+                  </article>
+                  </div> 
               </div>
-              <div class="col-md-6 col-lg-7 pl-lg-5 py-md-5">
-                  <div class="py-md-5">
-                      <div class="row justify-content-start pb-3">
-                    <div class="col-md-12 heading-section  p-4 p-lg-5">
-                      <h2 class="mb-5">We Are <span>Caring Crowns Dental</span> A Dentist Clinic</h2>
-                      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <div class="col-md-6 col-lg-7">                 
+                <div class="row justify-content-start pb-3">
+                    <div class="col-md-12 heading-section mt-3 p-lg-5">
+                      <h2 class="mb-4">We Are <span style="color:rgb(255, 123, 0)">Caring Crowns Dental</span>, A Dental Clinic</h2>
+                      <p>We are passionate to provide dentistry, dedicated to excellence because <b>"An attractive smile makes a lasting impression"</b> and we are committed to provide a precise and meticulous smile. </p>
+                      <p>If you are looking forward for a Dentistry in a calm and relaxed environment with the high quality of dental treatment and materials, then you have come to the right place. When you visit our practice you will experience a caring positive environment. </p>
+                      <p>Our highly qualified doctors are enthusiastic and compassionate for the patients to give a needful and accurate treatment. </p>
                       <p class="mt-5"><a routerLink="/contact" class="header-button py-2 px-3">Contact us</a></p>
-                    </div>
-                  </div>
-              </div>
-          </div>
+                    </div>                  
+                </div>
+             </div>
       </div>
       </div>
   </section>
 
+  
+  <div class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-7 text-center">
+          <h1 class="mb-3" style="color:rgb(11, 32, 78); font-weight:700;">TREATMENTS</h1>
+          <h6 class="subtitle mb-5">Dental check up is mandatory for every individual to visit dental clinic in every 6 month recommended by WHO(World Health Organisation) for maintenance of good oral hygiene. </h6>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <!-- column  -->
+        <div class="col-lg-3 mb-5">
+            <div class="col-md-12 text-center">
+              <img src="../../../assets/images/png/1.png" alt="Dental Fillings" class="img-fluid rounded-circle" width="160"/>
+              <div class="pt-2 text-center">
+                <h5 class="mt-2 font-weight-medium mb-0">Dental Fillings</h5>                              
+              </div>
+            </div>
+         </div>
+        <!-- column  -->
+        <!-- column  -->
+        <div class="col-lg-3 mb-5">
+            <div class="col-md-12 text-center">
+              <img src="../../../assets/images/png/tooth.png" alt="Teeth Whitening" class="img-fluid rounded-circle" width="160"/>
+              <div class="pt-2 text-center">
+                <h5 class="mt-2 font-weight-medium mb-0">Teeth Whitening</h5>                              
+              </div>
+            </div>
+          </div>
+        <!-- column  -->
+        <!-- column  -->
+        <div class="col-lg-3 mb-5">
+          <div class="col-md-12 text-center">
+              <img src="../../../assets/images/png/root-canal.png" alt="Root Canel Treatment" class="img-fluid rounded-circle" width="160"/>
+              <div class="pt-2 text-center">
+                <h5 class="mt-2 font-weight-medium mb-0">Root Canel Treatment</h5>                              
+              </div>
+            </div>
+          </div>
+        <!-- column  -->
+         <!-- column  -->
+         <div class="col-lg-3 mb-5">
+            <div class="col-md-12 text-center">
+                <img src="../../../assets/images/png/denture.png" alt="Dentures" class="img-fluid rounded-circle" width="160"/>
+                <div class="pt-2 text-center">
+                  <h5 class="mt-2 font-weight-medium mb-0">Dentures</h5>                              
+                </div>
+              </div>
+            </div>
+          <!-- column  -->
+           <!-- column  -->
+         <div class="col-lg-3 mb-2">
+            <div class="col-md-12 text-center">
+                <img src="../../../assets/images/png/implant.png" alt="Dental Implants" class="img-fluid rounded-circle" width="160"/>
+                <div class="pt-2 text-center">
+                  <h5 class="mt-2 font-weight-medium mb-0">Dental Implants</h5>                              
+                </div>
+              </div>
+            </div>
+          <!-- column  -->
+            <!-- column  -->
+         <div class="col-lg-3 mb-2">
+            <div class="col-md-12 text-center">
+                <img src="../../../assets/images/png/2.png" alt="Preventive Dentistry" class="img-fluid rounded-circle" width="160"/>
+                <div class="pt-2 text-center">
+                  <h5 class="mt-2 font-weight-medium mb-0">Preventive Dentistry</h5>                              
+                </div>
+              </div>
+            </div>
+          <!-- column  -->
+             <!-- column  -->
+         <div class="col-lg-3 mb-2">
+            <div class="col-md-12 text-center">
+                <img src="../../../assets/images/png/3.png" alt="Braces & Aligners" class="img-fluid rounded-circle" width="160"/>
+                <div class="pt-2 text-center">
+                  <h5 class="mt-2 font-weight-medium mb-0">Braces & Aligners</h5>                              
+                </div>
+              </div>
+            </div>
+          <!-- column  -->
+        <!-- column  -->
+        <div class="col-lg-3 mb-2">
+          <div class="col-md-12 text-center">
+              <img src="../../../assets/images/png/removal.png" alt="Teeth Removal" class="img-fluid rounded-circle" width="160"/>
+              <div class="pt-2 text-center">
+                <h5 class="mt-2 font-weight-medium mb-0">Teeth Removal</h5>                              
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
 
   <div class="py-5 service-12 ">
     <div class="container">
-        <div class="row mt-5 mb-5 pt-5">
-            <div class="col-lg-6 mt-4">
-                <span class="badge badge-info rounded-pill px-3 py-1 font-weight-light" style=" background-image: linear-gradient(180deg, #F44336 5%, #FF9800 95% );">Service</span>
+        <div class="row mb-5 pt-5">
+            <div class="col-lg-6">
+                <span class="badge badge-info rounded-pill px-3 py-1 font-weight-light" style=" background-image: linear-gradient(180deg, #F44336 5%, #FF9800 95% );">WHY US?</span>
                 <div class="row justify-content-center pb-3">
                   <div class="col-md-12 heading-section ">
-                    <h2>Our Services</h2>
+                    <h2 style="color:rgb(11, 32, 78);">Why Caring Crowns </h2>
                   </div>
                 </div>
-                <h6 class="font-weight-light subtitle">You can relay on our amazing features list and also our customer services will be great experience</h6>
+                <h6 class="font-weight-light subtitle">A caring and positive environment.</h6>
                 <div class="row">
-                    <div class="col-md-6 mt-3">
+                    <div class="col-md-6 mt-4">
                       <div class="d-flex align-self-stretch ">
                         <div class="media block-6 services d-flex">
-                          <div class="icon justify-content-center align-items-center d-flex"><img src="../../../assets/images/ambulance.png" alt="" width="70px"></div>
+                          <div class="icon justify-content-center align-items-center d-flex"><img src="../../../assets/images/png/5.png" alt="" width="70px"></div>
                           <div class="media-body pl-md-4">
-                            <h5 class="heading mb-3">Emergency Services</h5>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <h5 class="heading mb-3">Modern Equipments</h5>
+                            <p>we provide specialized Dentistry with high quality of dental materials. </p>
+                          </div>
+                        </div>      
+                      </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                      <div class="d-flex align-self-stretch ">
+                        <div class="media block-6 services d-flex">
+                          <div class="icon justify-content-center align-items-center d-flex"><img src="../../../assets/images/png/4.png" alt="" width="70px"></div>
+                          <div class="media-body pl-md-4">
+                            <h5 class="heading mb-3">Quality</h5>
+                            <p>we are devoted to delever the highest level of treatment at a very affordable price.</p>
                           </div>
                         </div>      
                       </div>
@@ -128,41 +278,27 @@
                     <div class="col-md-6 mt-3">
                       <div class="d-flex align-self-stretch ">
                         <div class="media block-6 services d-flex">
-                          <div class="icon justify-content-center align-items-center d-flex"><img src="../../../assets/images/doctor.png" alt="" width="70px"></div>
+                          <div class="icon justify-content-center align-items-center d-flex"><img src="../../../assets/images/png/6.png" alt="" width="70px"></div>
+                          <div class="media-body pl-md-4">
+                            <h5 class="heading mb-3">Sterilization</h5>
+                            <p>Autoclaved and Sterilised instruments</p>
+                          </div>
+                        </div>      
+                      </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                      <div class="d-flex align-self-stretch ">
+                        <div class="media block-6 services d-flex">
+                          <div class="icon justify-content-center align-items-center d-flex"><img src="../../../assets/images/png/doctor.png" alt="" width="70px"></div>
                           <div class="media-body pl-md-4">
                             <h5 class="heading mb-3">Qualified Doctors</h5>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <p>we provide complete oral care on your schedule.</p>
                           </div>
                         </div>      
                       </div>
                     </div>
-                    <div class="col-md-6 mt-3">
-                      <div class="d-flex align-self-stretch ">
-                        <div class="media block-6 services d-flex">
-                          <div class="icon justify-content-center align-items-center d-flex"><img src="../../../assets/images/stethoscope.png" alt="" width="70px"></div>
-                          <div class="media-body pl-md-4">
-                            <h5 class="heading mb-3">Outdoors Checkup</h5>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                          </div>
-                        </div>      
-                      </div>
-                    </div>
-                    <div class="col-md-6 mt-3">
-                      <div class="d-flex align-self-stretch ">
-                        <div class="media block-6 services d-flex">
-                          <div class="icon justify-content-center align-items-center d-flex"><img src="../../../assets/images/24hours" alt="" width="70px"></div>
-                          <div class="media-body pl-md-4">
-                            <h5 class="heading mb-3">24 Hours Service</h5>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                          </div>
-                        </div>      
-                      </div>
-                    </div>
-                    <!-- <div class="col-lg-12 my-4 ml-5 mt-5">
-                        <a class="btn btn-info-gradiant btn-md border-0 text-white ml-5" routerLink="/service"><span>Know More</span></a>
-                    </div> -->
+                  </div>
                 </div>
-            </div>
             <div class="col-lg-6 mt-5 pt-5">
                 <div class="row wrap-service12">
                     <div class="col-md-6">
@@ -181,27 +317,27 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
 
   <section class="ftco-intro img" style="background-image: url(assets/images/bg_2.jpg); height:300px;">
           <div class="overlay"></div>
           <div class="container">
               <div class="row justify-content-center">
-                  <div class="col-md-9 text-center">
-                      <h2>Your Smile is Our Priority</h2>
+                  <div class="col-md-9 mt-4 text-center">
+                      <h2>"An attractive smile makes a lasting impression"</h2>
                       <p>We can manage your dream building A small river named Duden flows by their place</p>
-                      <p class="mt-5 mb-4"><button type="button" class="header-button pl-3 pr-3" (click)="openModalAppointment(template)">Make an Appointment</button></p>
+                      <p class="mt-3 mb-4"><button type="button" class="header-button pl-3 pr-3" (click)="openModalAppointment(template)">Make an Appointment</button></p>
                   </div>
               </div>
           </div>
-      </section>
+  </section>
       
       <section class="ftco-section" id="doctor-section">
           <div class="container-fluid px-5">
               <div class="row justify-content-center mb-5 pb-2">
         <div class="col-md-8 text-center heading-section ">
-          <h2 class="mb-4">Our Qualified Doctors</h2>
-          <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+          <h2 class="mb-4" style="color:rgb(11, 32, 78);">Our Qualified Doctors</h2>
+          <p>Our highly qualified doctors are enthusiastic and compassionate for the patients to give a needful and accurate treatment.</p>
         </div>
       </div>	
               <div class="row">
@@ -232,10 +368,10 @@
                               <div class="img align-self-stretch" style="background-image: url(assets/images/doc-2.jpg);"></div>
                           </div>
                           <div class="text pt-3 text-center">
-                              <h3 class="mb-2">Dr. Rachel Parker</h3>
-                              <span class="position mb-2">Dentist</span>
+                              <h3 class="mb-2">Dr. Diksha Mehra</h3>
+                              <span class="position mb-2">Dentist Specialist</span>
                               <div class="faded">
-                                  <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                                  <p>"An attractive smile makes a lasting impression"</p>
                                   <ul class="ftco-social text-center">
                       <li class=""><a href="#"><span class="icon-twitter"></span></a></li>
                       <li class=""><a href="#"><span class="icon-facebook"></span></a></li>
@@ -294,11 +430,11 @@
       </section>
    
   
-  <section class="ftco-section bg-light" id="blog-section">
+  <!-- <section class="ftco-section bg-light" id="blog-section">
     <div class="container">
       <div class="row justify-content-center mb-5 pb-5">
         <div class="col-md-10 heading-section text-center ">
-          <h2 class="mb-4">Gets Every Single Updates Here</h2>
+          <h2 class="mb-4" style="color:rgb(11, 32, 78);">Gets Every Single Updates Here</h2>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
         </div>
       </div>
@@ -340,17 +476,17 @@
           </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <div class="testimonial8">
     <div class="testi8 text-center">
       <!-- item -->
       <div class="item">
-        <div class="bg" style="background-image:url(assets/images/bg_3.jpg)">
+        <div class="bg" style="background-image:url(assets/images/bg6.jpg)">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8 col-md-10">
-                <h3 class="text-white mb-4">"Needless to say we are extremely satisfied with the results. Thank you for making it painless, pleasant!"</h3>
+                <h3 class="text-white mb-4">Dental check up is mandatory for every individual to visit dental clinic in every 6 month recommended by WHO(World Health Organisation) for maintenance of good oral hygiene.</h3>
                 <a href="#" class="play-icon db text-decoration-none" data-toggle="modal" data-target="#exampleModal"><img src="https://img.icons8.com/nolan/64/000000/play.png"></a>
                 <h5 class="text-white mb-0 mt-3 font-weight-normal">Diksha Mehra</h5>
                 <span class="text-white font-13">Caring Crowns Dental Clinic</span>
@@ -367,13 +503,13 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Watch Our Video</h5>
+            <h5 class="modal-title">Caring Crowns Dental clinic | Greater Noida (U.P.)</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                           <span aria-hidden="true">&times;</span>
                                       </button>
           </div>
           <div class="modal-body" id="yt-player">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DDwbjWCgxVM?" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/zGoBFU1q4g0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>

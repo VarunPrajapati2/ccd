@@ -10,9 +10,7 @@ export class Appointment2Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $(function() {
-      $('#dp').datepicker();
-    });
+  
   }
 
 }

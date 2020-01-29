@@ -223,3 +223,18 @@
 .testimonial8 .testi8 .owl-dots .owl-dot:hover {
   opacity: 1;
 }
+
+
+.input-group-text{
+  background-color: #fff;
+  height: 40px;
+}
+.form-control{
+  height: 40px !important;
+}
+.carder{
+  border-radius: 20px;
+  max-height: 580px;
+  box-shadow: 5px 8px 10px rgb(194, 194, 194);
+}
+
